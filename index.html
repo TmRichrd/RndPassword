@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>随机密码生成器</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <link href="https://cdn.bootcss.com/font-awesome/5.12.1/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <h2>随机密码生成器</h2>
+    <div class="result-container">
+      <span id="result"></span>
+      <button class="btn" id="clipboard">
+        <i class="fa fa-clipboard"></i>
+      </button>
+    </div>
+    <div class="settings">
+      <div class="setting">
+        <label>密码长度</label>
+        <input type="number" name="" value="20" min="4" max="20" id="length" id="">
+      </div>
+      <div class="setting">
+        <label>包含大写字母</label>
+        <input type="checkbox" id="uppercase" checked>
+      </div>
+      <div class="setting">
+        <label>包含小写字母</label>
+        <input type="checkbox" id="lowercase" checked>
+      </div>
+      <div class="setting">
+        <label>包含数字</label>
+        <input type="checkbox" id="numbers" checked>
+      </div>
+      <div class="setting">
+        <label>包含符号</label>
+        <input type="checkbox" id="symbol" checked>
+      </div>
+    </div>
+    <button class="btn btn-large" id="generate">
+      生成密码
+    </button>
+  </div>
+  <script src="index.js"></script>
+</body>
+
+</html>
